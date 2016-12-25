@@ -1,7 +1,17 @@
 <Driver Description="{{cookiecutter.project_short_description}}" MainClass="driver.{{cookiecutter.driver_name}}" Name="{{cookiecutter.driver_name}}" Version="1.0.0">
     <Layout>
-        <Category Name="{{cookiecutter.category}}">
-            <Command Description="" DisplayName="Method One" Name="method_one" />
+        <Category Name="Hidden Commands">
+            <Command Description="" DisplayName="Orchestration Save" Name="orchestration_save" />
+            <Command Description="" DisplayName="Orchestration Restore" Name="orchestration_restore" />
         </Category>
+        <Command Name="PowerOn" DisplayName="Power On" Tags="power" Description="Power on device">
+        </Command>
+        <Command Name="PowerOff" DisplayName="Power Off" Tags="power" Description="Power off device">
+        </Command>
+        <Command Name="PowerCycle" DisplayName="Power Cycle" Tags="power" Description="Power off, then power on device">
+            <Parameters>
+                <Parameter Name="delay" DisplayName="Delay" Type="String" Mandatory="False" DefaultValue="0"/>
+            </Parameters>
+        </Command>
     </Layout>
 </Driver>

@@ -128,4 +128,22 @@ class {{cookiecutter.driver_name}} (ResourceDriverInterface):
         '''
         pass
 
+        def PowerOn(self, context, ports):
+            """
+            :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
+            """
+            pass
+
+        def PowerOff(self, context, ports):
+            """
+            :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
+            """
+            pass
+
+        def PowerCycle(self, context, ports, delay):
+            """
+            :type context: cloudshell.shell.core.driver_context.ResourceRemoteCommandContext
+            """
+            pass
+
     # </editor-fold>
