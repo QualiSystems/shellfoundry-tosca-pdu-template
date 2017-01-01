@@ -23,13 +23,6 @@ node_types:
     #    description: Some attribute description
     #    constraints:
     #      - valid_values: [fast, slow]
-    artifacts:
-      icon:
-        file: shell-icon.png
-        type: tosca.artifacts.File
-      driver:
-        file: {{ cookiecutter.driver_name }}.zip
-        type: tosca.artifacts.File
     capabilities:
       auto_discovery_capability:
         type: cloudshell.capabilities.AutoDiscovery
@@ -43,3 +36,10 @@ node_types:
           inventory_description:
             type: string
             default: Describe the resource shell template
+    artifacts:
+      icon:
+        file: shell-icon.png
+        type: tosca.artifacts.File
+      driver:
+        file: {{ cookiecutter.driver_name }}.zip
+        type: tosca.artifacts.File
