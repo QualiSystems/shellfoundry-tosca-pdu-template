@@ -17,7 +17,7 @@ node_types:
   vendor.switch.{{cookiecutter.model_name}}:
     derived_from: cloudshell.nodes.PDU
     #properties:
-    #  property_name:
+    #  my_property:
     #    type: string          # optional values: string, integer, float, boolean, cloudshell.datatypes.Password
     #    default: fast
     #    description: Some attribute description
