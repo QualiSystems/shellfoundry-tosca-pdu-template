@@ -10,7 +10,7 @@ description: >
   TOSCA based PDU shell
 
 imports:
-  - cloudshell_standard: cloudshell_pdu_standard_1_0_0.yaml
+  - cloudshell_standard: cloudshell_pdu_standard_2_0_0.yaml
 
 node_types:
 
