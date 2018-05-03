@@ -13,6 +13,9 @@
 	"pypi_username": "{{ cookiecutter.github_username }}",
 	"year": "2016",
 	"version": "0.1.0",
-	"server_version" : "7.0",
-	"use_pypi_deployment_with_travis": "y"
+	"server_version" : "8.0",
+	"use_pypi_deployment_with_travis": "y",
+    "template_name" : "gen2/pdu",
+    "template_descr" : "2nd generation shell template for a standard pdu",
+    "template_repository" : "https://github.com/QualiSystems/shellfoundry-tosca-pdu-template"
 }
