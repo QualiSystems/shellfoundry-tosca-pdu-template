@@ -1,12 +1,15 @@
 {
 	"full_name": "Anonymous",
+    "python_version": "2",
 	"email": "info@quali.com",
 	"github_username": "qualisystemslab",
 	"category" : "App Management",
-	"project_name": "Shell",
-	"family_name" : "Family",
+	"project_name": "",
+	"family_name" : "",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "model_name": "{{ cookiecutter.project_slug.replace('_', ' ').replace('-',' ').title().replace(' ','') }}",
+    "display_name": "{{ cookiecutter.project_slug.replace('_', ' ').replace('-',' ').title() }}",
+    "model_name": "{{ cookiecutter.display_name.replace(' ','') }}",
+    "deps_name": "{{ cookiecutter.project_slug.replace('_', ' ').replace('-',' ').title().replace(' ','_') }}_offline_dependencies",
 	"driver_name" : "{{ cookiecutter.model_name }}Driver",
 	"project_short_description": "Describe the purpose of your CloudShell shell",
 	"release_date": "2016-1-22",
@@ -14,5 +17,8 @@
 	"year": "2016",
 	"version": "0.1.0",
 	"server_version" : "8.0",
-	"use_pypi_deployment_with_travis": "y"
+	"use_pypi_deployment_with_travis": "y",
+    "template_name" : "gen2/pdu",
+    "template_descr" : "2nd generation shell template for a standard pdu",
+    "template_repository" : "https://github.com/QualiSystems/shellfoundry-tosca-pdu-template"
 }
